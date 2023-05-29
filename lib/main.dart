@@ -1,7 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:producto/pages/pages.dart';
+import 'package:provider/provider.dart';
 
 void main() => runApp(const MyApp());
+
+class AppState extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MultiProvider(
+      providers: [],
+    );
+  }
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
